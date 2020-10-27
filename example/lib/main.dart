@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:advance_pdf_viewer/simple_pdf_viewer.dart';
+import 'package:simple_pdf_viewer/simple_pdf_viewer.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('FlutterPluginPDFViewer'),
+          title: const Text('simple pdf viewer'),
         ),
         body: Center(
           child: _isLoading
@@ -37,6 +37,7 @@ class _MyAppState extends State<MyApp> {
               : PDFViewer(
                   document: document,
                   zoomSteps: 1,
+                  scrollDirection: Axis.vertical,
                 ),
         ),
       ),
