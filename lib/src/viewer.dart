@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
+
+import '../simple_pdf_viewer.dart';
 
 enum IndicatorPosition { topLeft, topRight, bottomLeft, bottomRight }
 
